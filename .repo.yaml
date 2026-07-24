@@ -1,0 +1,25 @@
+# Provenance for the publishing tool — links this standalone repo back to the
+# source topic package in the edufintech monorepo.
+repo_slug: "Fintech-Volume-Imbalance-Bars-Bar-Construction-algorithm"
+github: "IslamBaraka90/Fintech-Volume-Imbalance-Bars-Bar-Construction-algorithm"
+visibility: "public"
+
+derives_from:
+  topic_id: "D01-F01-A06"
+  title: "Volume-Imbalance Bars"
+  domain_id: "D01"
+  domain: "Market Data Engineering"
+  family_id: "D01-F01"
+  family: "Bar Construction"
+  source_path: "algorithms/domains/D01-market-data-engineering/D01-F01-bar-construction/D01-F01-A06-volume-imbalance-bars"
+
+article_url: "https://thefintechbuilder.com/market-data-engineering/bar-construction/volume-imbalance-bars/"
+
+languages: ["python", "typescript"]
+
+# Split model: reader keeps the teaching snippet; this repo owns the production
+# constructor, the incremental StreamingVolumeImbalanceBarBuilder (which also
+# exposes the adaptive EWMA state), and the trade-tape loader.
+# Note: Yahoo has no tick data and aggregated bars lose per-trade signs, so the
+# real-data path is a synthetic trade tape only.
+model: "split"

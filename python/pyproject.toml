@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fintech-volume-imbalance-bars"
+version = "0.1.0"
+description = "Volume-Imbalance Bars for market-data engineering — size-weighted information-driven bars that close on signed volume against an EWMA-adaptive frozen threshold. Canonical cross-language reference implementation."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "The Fintech Builder", email = "islam.baraka.90@gmail.com" }]
+keywords = [
+  "fintech", "volume-imbalance-bars", "imbalance-bars", "bar-construction",
+  "information-driven-bars", "order-flow", "signed-volume", "tick-rule",
+  "ohlcv", "market-data", "market-data-engineering", "trading", "finance",
+  "quant", "algorithm",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Financial and Insurance Industry",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Office/Business :: Financial :: Investment",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"]
+
+[project.urls]
+"Article" = "https://thefintechbuilder.com/market-data-engineering/bar-construction/volume-imbalance-bars/"
+"Homepage" = "https://thefintechbuilder.com"
+"Source" = "https://github.com/IslamBaraka90/Fintech-Volume-Imbalance-Bars-Bar-Construction-algorithm"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fintech_volume_imbalance_bars"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

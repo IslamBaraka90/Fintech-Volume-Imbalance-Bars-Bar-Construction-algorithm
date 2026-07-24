@@ -1,0 +1,55 @@
+{
+  "name": "fintech-volume-imbalance-bars",
+  "version": "0.1.0",
+  "description": "Volume-Imbalance Bars for market-data engineering — size-weighted information-driven bars that close on signed volume against an EWMA-adaptive frozen threshold. Canonical cross-language reference implementation.",
+  "keywords": [
+    "fintech",
+    "volume-imbalance-bars",
+    "imbalance-bars",
+    "bar-construction",
+    "information-driven-bars",
+    "order-flow",
+    "signed-volume",
+    "tick-rule",
+    "ohlcv",
+    "market-data",
+    "market-data-engineering",
+    "trading",
+    "finance",
+    "quant",
+    "algorithm"
+  ],
+  "homepage": "https://thefintechbuilder.com/market-data-engineering/bar-construction/volume-imbalance-bars/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IslamBaraka90/Fintech-Volume-Imbalance-Bars-Bar-Construction-algorithm.git"
+  },
+  "license": "MIT",
+  "author": "The Fintech Builder <islam.baraka.90@gmail.com>",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node --experimental-strip-types --test \"test/*.test.ts\"",
+    "example": "node --experimental-strip-types examples/quickstart.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
