@@ -1,7 +1,7 @@
 {
   "name": "fintech-volume-imbalance-bars",
   "version": "0.1.0",
-  "description": "Volume-Imbalance Bars for market-data engineering — size-weighted information-driven bars that close on signed volume against an EWMA-adaptive frozen threshold. Canonical cross-language reference implementation.",
+  "description": "Volume-Imbalance Bars for market-data engineering \u2014 size-weighted information-driven bars that close on signed volume against an EWMA-adaptive frozen threshold. Canonical cross-language reference implementation.",
   "keywords": [
     "fintech",
     "volume-imbalance-bars",
@@ -50,6 +50,7 @@
     "example": "node --experimental-strip-types examples/quickstart.ts"
   },
   "devDependencies": {
+    "@types/node": "^22.0.0",
     "typescript": "^5.7.0"
   }
 }

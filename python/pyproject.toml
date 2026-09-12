@@ -6,7 +6,6 @@ build-backend = "hatchling.build"
 name = "fintech-volume-imbalance-bars"
 version = "0.1.0"
 description = "Volume-Imbalance Bars for market-data engineering — size-weighted information-driven bars that close on signed volume against an EWMA-adaptive frozen threshold. Canonical cross-language reference implementation."
-readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [{ name = "The Fintech Builder", email = "islam.baraka.90@gmail.com" }]
