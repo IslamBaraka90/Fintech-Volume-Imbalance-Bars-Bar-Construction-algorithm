@@ -21,14 +21,16 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - run: pip install -e ".[dev]"
-      - run: pytest -q          # offline; the live Yahoo test is deselected by default
+      - run: pytest -q          # no network access required
 
   typescript:
     name: TypeScript tests
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: ["20", "22"]
+        # 22 and 24, not 20: the suite runs TypeScript directly through
+        # --experimental-strip-types, which landed in Node 22.6.
+        node-version: ["22", "24"]
     defaults:
       run:
         working-directory: typescript
